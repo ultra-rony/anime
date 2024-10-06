@@ -13,13 +13,13 @@ final sl = GetIt.instance;
 Future<void> initializeDependencies() async {
   Dio dio = Dio();
   sl.registerSingleton<Dio>(dio);
-
+  // repo
   sl.registerSingleton<Logger>(Logger());
   sl.registerSingleton<AnimeApiService>(AnimeApiService(sl()));
   sl.registerSingleton<AnimeRepository>(AnimeRepositoryImpl(sl(), sl()));
-
+  // usecases
   sl.registerSingleton<GetAnimeRemoteUseCase>(GetAnimeRemoteUseCase(sl()));
-
+  // blocs cubit
   sl.registerFactory<ColumnCubit>(() => ColumnCubit());
   sl.registerFactory<AnimeBloc>(() => AnimeBloc(sl()));
 }
