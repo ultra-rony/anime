@@ -1,3 +1,7 @@
+import 'favorite_entity.dart';
+import 'headers_entity.dart';
+import 'rating_entity.dart';
+
 class AnimeShortEntity {
   String? id;
   String? year;
@@ -5,7 +9,7 @@ class AnimeShortEntity {
   String? genres;
   FavoriteEntity? favorite;
   HeadersEntity? headers;
-  RatingsEntity? ratings;
+  RatingEntity? ratings;
 
   AnimeShortEntity(
       {this.id,
