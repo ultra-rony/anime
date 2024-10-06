@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../../generated/l10n.dart';
+
 class CustomErrorWidget extends StatelessWidget {
   const CustomErrorWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Text(
-          "Error",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          S.of(context).error_message,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
     );
