@@ -1,6 +1,9 @@
+import 'package:anime/domain/entities/anime_entity.dart';
 import 'package:anime/domain/usecases/get_anime_remote_use_case.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
+
+import '../../core/date_state.dart';
 
 part 'anime_event.dart';
 part 'anime_state.dart';
@@ -13,8 +16,15 @@ class AnimeBloc extends Bloc<AnimeEvent, AnimeState> {
   }
 
   onRemoteAnime(AnimeRemoteEvent event, Emitter<AnimeState> emit) async {
-    final hero = await _getAnimeRemoteUseCase();
-    print(hero?.data);
-    print(hero?.error);
+    final anime = await _getAnimeRemoteUseCase();
+
+    if (anime is DataSuccess && anime!.data!.isNotEmpty) {
+      emit(AnimeRemoteState(anime.data!));
+    }
+
+    if (anime is DataFailed) {
+      emit(AnimeErrorState());
+    }
+
   }
 }
