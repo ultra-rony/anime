@@ -12,7 +12,6 @@
   </div>
 </div>
 <br/>
-<br/>
 
 ```bash
 git clone https://github.com/ultra-rony/anime.git
