@@ -16,8 +16,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<AnimeBloc>(
-            create: (context) => sl()..add(AnimeRemoteEvent())),
+        BlocProvider<AnimeBloc>(create: (context) => sl()..add(AnimeRemoteEvent())),
         BlocProvider<ColumnCubit>(create: (context) => sl()),
       ],
       child: MaterialApp.router(
