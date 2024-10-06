@@ -1,22 +1,18 @@
-import 'favorite_entity.dart';
-import 'headers_entity.dart';
-import 'rating_entity.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class AnimeShortEntity {
-  String? id;
-  String? year;
-  String? img;
-  String? genres;
-  FavoriteEntity? favorite;
-  HeadersEntity? headers;
-  RatingEntity? ratings;
+part 'anime_short_entity.freezed.dart';
 
-  AnimeShortEntity(
-      {this.id,
-      this.year,
-      this.img,
-      this.genres,
-      this.favorite,
-      this.headers,
-      this.ratings});
+part 'anime_short_entity.g.dart';
+
+@freezed
+class AnimeShortEntity with _$AnimeShortEntity {
+  const factory AnimeShortEntity({
+    String? id,
+    String? year,
+    String? img,
+    String? genres,
+  }) = _AnimeShortEntity;
+
+  factory AnimeShortEntity.fromJson(Map<String, Object?> json) =>
+      _$AnimeShortEntityFromJson(json);
 }
