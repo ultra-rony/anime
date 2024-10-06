@@ -1,5 +1,7 @@
 # Flutter app
 
+[(https://img.shields.io/badge/flutter-3.24.3-blue)]
+
 ```bash
 git clone https://github.com/ultra-rony/anime.git
 ```
