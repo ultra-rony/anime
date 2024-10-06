@@ -10,11 +10,4 @@ class RatingModel extends RatingEntity {
     rating = json['rating'] ?? "--";
     votes = json['votes'] ?? "0";
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['rating'] = rating;
-    data['votes'] = votes;
-    return data;
-  }
 }

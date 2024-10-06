@@ -10,11 +10,4 @@ class HeadersModel extends HeadersEntity {
     ru = json['ru'];
     en = json['en'];
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['ru'] = ru;
-    data['en'] = en;
-    return data;
-  }
 }
