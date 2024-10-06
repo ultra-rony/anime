@@ -3,9 +3,9 @@ class AnimeShortEntity {
   String? year;
   String? img;
   String? genres;
-  Favorite? favorite;
-  Headers? headers;
-  Ratings? ratings;
+  FavoriteEntity? favorite;
+  HeadersEntity? headers;
+  RatingsEntity? ratings;
 
   AnimeShortEntity(
       {this.id,
