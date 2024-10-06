@@ -1,22 +1,40 @@
-# anime
+# Flutter app
 
-Flutter anime recommendation app.
+```bash
+git clone https://github.com/ultra-rony/anime.git
+```
 
-## Getting Started
+```bash
+cd anime
+```
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# anime
-# anime
-# anime
-# anime
-# anime
-# anime
+<div align="left">
+  <div style="display: flex;">
+        <img src="https://image.link.rony.fun//TuzYfikwROcGR1WNzCP2MVEdMIjXHwDo0hzACEdvde0YskCiHZrizH6mw3XEVmt5.jpg" width="40%" alt=""/>
+        <img src="https://image.link.rony.fun//uMmH3txgvMejfPUnLX3eWmd45au8ZZGbpQ3RFBhAp0lFRIVxEoW7Hkdy62Lxd16T.jpg" width="40%" alt=""/>
+    </div>
+</div>
+
+## Dependencies
+
+- get_it
+- bloc
+- cubit
+- go_router
+- dio 
+- freezed_annotation 
+- json_annotation
+- flutter_localizations
+- cached_network_image
+- intl
+- logger
