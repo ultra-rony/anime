@@ -1,6 +1,10 @@
 # Flutter app
 
-(https://img.shields.io/badge/flutter-3.24.3-blue)
+<div align="left">
+  <div style="display: flex;">
+        <img src="https://img.shields.io/badge/flutter-3.24.3-blue" alt=""/>
+    </div>
+</div>
 
 ```bash
 git clone https://github.com/ultra-rony/anime.git
