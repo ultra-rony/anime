@@ -1,7 +1,7 @@
 # Flutter app
 
 <div align="left">
-  <div style="display: flex;">
+  <div style="display: flex; margin-bottom: 30px;">
         <img src="https://img.shields.io/badge/flutter-3.24.3-blue" alt=""/>
         <img src="https://img.shields.io/badge/dio-5.7.0-blue" alt=""/>
         <img src="https://img.shields.io/badge/get_it-8.0.0-blue" alt=""/>
@@ -9,7 +9,7 @@
         <img src="https://img.shields.io/badge/go_router-14.3.0-blue" alt=""/>
         <img src="https://img.shields.io/badge/intl-0.19.0-blue" alt=""/>
         <img src="https://img.shields.io/badge/freezed-2.5.7-blue" alt=""/>
-    </div>
+  </div>
 </div>
 
 ```bash
