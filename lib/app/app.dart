@@ -1,3 +1,4 @@
+import 'package:anime/presentation/cubit/column_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -17,6 +18,7 @@ class App extends StatelessWidget {
       providers: [
         BlocProvider<AnimeBloc>(
             create: (context) => sl()..add(AnimeRemoteEvent())),
+        BlocProvider<ColumnCubit>(create: (context) => sl()),
       ],
       child: MaterialApp.router(
           localizationsDelegates: const [
