@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../generated/l10n.dart';
 import '../cubit/column_cubit.dart';
 
 class CustomAppBarWidget {
 
   getAppBar(BuildContext context) {
     return AppBar(
-      title: const Text('App demo'),
+      title: Text(S.of(context).app_name),
       actions: <Widget>[
         IconButton(
           icon: const Icon(Icons.view_column),

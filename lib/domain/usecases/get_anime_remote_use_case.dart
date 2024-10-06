@@ -11,6 +11,6 @@ class GetAnimeRemoteUseCase
 
   @override
   Future<DataState<List<AnimeEntity>>?> call({void params}) {
-    return _animeRepository.getRemoteAnime(0, 15);
+    return _animeRepository.getRemoteAnime();
   }
 }

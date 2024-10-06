@@ -15,8 +15,7 @@ class AnimeRepositoryImpl implements AnimeRepository {
   AnimeRepositoryImpl(this._animeApiService, this._logger);
 
   @override
-  Future<DataState<List<AnimeEntity>>> getRemoteAnime(
-      int page, int limit) async {
+  Future<DataState<List<AnimeEntity>>> getRemoteAnime() async {
     try {
       final httpResponse = await _animeApiService.getAnime();
       if (httpResponse.statusCode == 200) {
