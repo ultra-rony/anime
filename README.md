@@ -8,9 +8,11 @@
         <img src="https://img.shields.io/badge/flutter_bloc-8.1.6-blue" alt=""/>
         <img src="https://img.shields.io/badge/go_router-14.3.0-blue" alt=""/>
         <img src="https://img.shields.io/badge/intl-0.19.0-blue" alt=""/>
-        <img src="https://img.shields.io/badge/freezed-2.5.7-blue" alt=""/><br/>
+        <img src="https://img.shields.io/badge/freezed-2.5.7-blue" alt=""/>
   </div>
 </div>
+<br/>
+<br/>
 
 ```bash
 git clone https://github.com/ultra-rony/anime.git
