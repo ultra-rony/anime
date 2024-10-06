@@ -1,4 +1,4 @@
-import '../../core/resources/date_state.dart';
+import '../../core/date_state.dart';
 import '../entities/anime_entity.dart';
 
 abstract class AnimeRepository {

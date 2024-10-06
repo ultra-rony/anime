@@ -1,5 +1,5 @@
-import 'package:anime/core/resources/date_state.dart';
-import 'package:anime/core/usecases/use_case.dart';
+import 'package:anime/core/date_state.dart';
+import 'package:anime/core/use_case.dart';
 import 'package:anime/domain/entities/anime_entity.dart';
 import 'package:anime/domain/repository/anime_repository.dart';
 
